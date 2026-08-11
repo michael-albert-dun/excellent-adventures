@@ -477,6 +477,18 @@ demo.
 
 ---
 
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## Claude's role
+
+- Rapid prototyping for interaction
+- Experiments on configuration generation and solution uniqueness
+- Final tweaking of UI
+- Learns from experience
+
+---
+
 
 <!-- .slide: class="act-divider act4-bg center" data-background-color="#3a3f47" -->
 <span class="act-label">Postscript</span>
