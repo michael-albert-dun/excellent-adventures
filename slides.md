@@ -465,6 +465,7 @@ true by fingerprint."
 - **Matrixmind** — two-dimensional Mastermind
 - **Deliagonal** — diner-themed rectangle clearing
 - **Wordtangle / Reflexicon** — segment &amp; word puzzles
+- All at <a href="https://michael-albert-dun.github.io/" target="_blank" rel="noopener">https://michael-albert-dun.github.io/</a>
 
 </div>
 
