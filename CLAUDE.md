@@ -34,9 +34,14 @@ edit, Submission display, Submission edit).
 - **Local server required to preview**: `slides.md` is fetched via
   `fetch()`, which browsers block for a double-clicked local file. Use
   `serve.command` (or `python3 -m http.server 8000`) and refresh after
-  edits. Michael has flagged this as something to reconsider before the
-  actual talk (e.g. an offline/bundled export) — not urgent, but raise it
-  again as the date approaches if it hasn't come up.
+  edits.
+- **Presenting day-of via GitHub Pages**: the repo lives at
+  github.com/michael-albert-dun/excellent-adventures; Michael plans to
+  make it public close to the talk date so it can be served directly via
+  GitHub Pages (real HTTP, so `fetch('slides.md')` works with no build
+  step). This resolves the earlier open question about needing an
+  offline/bundled export. `serve.command` / local `http.server` stays in
+  place as the fallback if there's no network on the day.
 - **Full-bleed backgrounds**: colours and images use reveal's native
   `data-background-color` / `data-background-image` on the `<!-- .slide:
   ... -->` attribute line, NOT CSS on the section itself — the latter only
@@ -66,6 +71,5 @@ edit, Submission display, Submission edit).
 ## Next time
 
 Nothing blocking — just keep iterating on `slides.md` content and any new
-staging/formatting requests the same way as above. If Michael raises the
-offline-export question, that's the one open architectural item flagged
-but not yet acted on.
+staging/formatting requests the same way as above. The offline-export
+question is settled (GitHub Pages + local-server fallback, see above).

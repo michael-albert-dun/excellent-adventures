@@ -177,6 +177,7 @@ Legacy submission edit screen.
 - The new server became available for testing
 - Fun and games with file permissions and ownership
 - Memories of the 80s and 90s
+- I became Claude's secretary
 
 ---
 
@@ -187,8 +188,9 @@ Legacy submission edit screen.
 
 - A little bit about PHP security
 - Not a bit of CSS (thank heavens)
-- Keep the big picture in your head (because Claude sort of doesn't)
+- Keep the big picture in your head
 - Users have strange preferences
+- But accommodating them is easy
 - Scope creep is tempting and real
 
 Note:
@@ -264,8 +266,8 @@ in case anyone wants to look it up afterward — no need to open it live.
 
 ## An old paper with loose threads
 
-**Albert &amp; Bouvel**, "A general theory of Wilf-equivalence for
-Catalan structures," *EJC* 22(4) #P4.45 (2015).
+**Albert &amp; Bouvel**, *A general theory of Wilf-equivalence for
+Catalan structures* (2015).
 
 
 Note:
@@ -300,14 +302,11 @@ the argument.
 
 ## One part that isn't quite finished
 
-Bloom's bijective proof of rule (4) works — but one step ("Lemma 8") is
-an *implicit* construction: it chases an orbit until it happens to land
-in the right place.
-
-> The authors' own words: "a little unsatisfactory since it is in part implicit."
-
-What's open: an explicit, closed-form description of that chase — or a
-bijection that avoids needing it at all.
+- We proved one rule algebraically
+- Jonathan Bloom gave us a bijective proof
+- One step in that proof is *implicit* - it chases an orbit of undetermined length until it happens to land in the right place
+- That's out of tune with the rest of the paper which relies on entirely explicit bijections
+- Can Claude help sort it out?
 
 Note:
 This is the actual open problem we've been poking at. No need to derive
@@ -337,7 +336,7 @@ verification infrastructure, not a one-shot proof request.
 
 - Three wrong fixes in a row, each looked right
 - Stopped guessing — built only what the proof gave
-- "Wait — this is just Figure 4"
+- *Wait — this is just Figure 4*
 - Mike's DFS description, not Claude's filtering — 500x faster
 - A cleaner data structure, proposed, still on the shelf
 
