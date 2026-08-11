@@ -393,13 +393,9 @@ good at connecting threads across all that accumulated text.
 
 ---
 
-<!-- .slide: class="act3" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
+<!-- .slide: class="act3 center vcenter" data-background-color="#fbeee6" -->
 
-## Tintangle <a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener" class="demo-tag">Demo</a>
-
-A 4×4 grid, four colours. Every internal corner rotates the surrounding
-2×2 block clockwise. Get each colour into one connected blob.
+<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="width:100%; max-height:85vh; object-fit:contain; border-radius:8px;" /></a>
 
 Note:
 Actually open Tintangle in the browser here and play a puzzle for real.
@@ -429,11 +425,13 @@ to actually prove it cleanly.
 
 ## Which Block-Rotation Puzzles Generate the Symmetric Group?
 
-- Claude was very keen to use the heavy machinery (Jordan's theorem)
-- There was a literature, but a lot of it was recreational and a bit sloppy
-- Let's try to build an elementary proof that's clear and interactive
+<ul>
+<li class="fragment" data-fragment-index="0">Claude was very keen to use the heavy machinery (Jordan's theorem)</li>
+<li class="fragment" data-fragment-index="1">There was a literature, but a lot of it was recreational and a bit sloppy</li>
+<li class="fragment" data-fragment-index="2">Let's try to build an elementary proof that's clear and interactive</li>
+</ul>
 
-<p style="text-align:center;"><a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag">Demo</a></p>
+<p class="fragment" data-fragment-index="3" style="text-align:center;"><a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag demo-tag-lg">Demo</a></p>
 
 ---
 

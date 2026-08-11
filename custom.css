@@ -153,6 +153,10 @@
   text-decoration: none;
 }
 
+.demo-tag.demo-tag-lg {
+  font-size: 0.84em;
+}
+
 /* two-column layout */
 .cols {
   display: flex;
