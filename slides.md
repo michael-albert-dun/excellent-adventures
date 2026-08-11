@@ -179,6 +179,9 @@ Legacy submission edit screen.
 - Memories of the 80s and 90s
 - I became Claude's secretary
 
+Note:
+Genuine issue arose at the last minute that was a result of Claude and I having different understandings of the scope (it: editor actions and publication pipeline), me (and the public webpage). 
+
 ---
 
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
