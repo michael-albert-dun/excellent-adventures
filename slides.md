@@ -418,7 +418,7 @@ demo.
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
 <span class="eyebrow">Act III · Games</span>
 
-## Tintangle <span class="demo-tag">Demo</span>
+## Tintangle <a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener" class="demo-tag">Demo</a>
 
 A 4×4 grid, four colours. Every internal corner rotates the surrounding
 2×2 block clockwise. Get each colour into one connected blob.
@@ -485,7 +485,7 @@ true by fingerprint."
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
 <span class="eyebrow">Act III · Games</span>
 
-## Corner Cases <span class="demo-tag">Demo</span>
+## Corner Cases <a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag">Demo</a>
 
 The same argument, told without a line of LaTeX — an interactive,
 click-to-rotate walkthrough built for exactly this kind of audience.

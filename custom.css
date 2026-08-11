@@ -147,6 +147,12 @@
   margin-left: 0.5em;
 }
 
+.reveal a.demo-tag,
+.reveal a.demo-tag:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* two-column layout */
 .cols {
   display: flex;
