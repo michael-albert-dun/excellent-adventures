@@ -1,0 +1,15 @@
+Mullett talk
+
+business at the front - AJC redesign
+party at the back - Game and puzzle pages
+
+
+Interesting things that happened
+
+- Par setting in tangleputt - Claude wanted to use a PRNG and add the seed to the URL instead of just recording the decisions
+- "Slow the animation by 30%" --> "Update animation duration from 270ms to 351ms (30% slower)"
+
+Comments from Vince
+
+Right, so I and others find that there's a ton of power in having the agents call LLMs recusively, or actually just themselves (you can run codex with a prompt in the commandline and collect the output!)
+And agents do see really good at calling LLMs now (this was not always the case!)

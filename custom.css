@@ -1,0 +1,283 @@
+:root {
+  --ink: #1c1f26;
+  --paper: #fbfaf7;
+  --act1: #1f4b6e;   /* business - steel blue */
+  --act1-bg: #eef4f8;
+  --act2: #5b3a8e;   /* research - purple */
+  --act2-bg: #f2eef8;
+  --act3: #c9552f;   /* party - warm orange */
+  --act3-bg: #fbeee6;
+  --act4: #3a3f47;   /* postscript - muted grey */
+  --act4-bg: #f0efed;
+  --accent: #d9a441;
+  --reflect: #33525c; /* reflection slides - deep contemplative teal */
+}
+
+.reveal {
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  color: var(--ink);
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal .slides section.center,
+.reveal .slides section[data-center] {
+  text-align: center;
+}
+
+/* Opt-in vertical centering for an individual slide (independent of
+   .center's text-align, and of the global center:false setting) —
+   stacks the slide's content as a column and centers it top-to-bottom. */
+.reveal .slides section.vcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reveal p, .reveal li {
+  font-size: 0.92em;
+  line-height: 1.4;
+}
+
+.reveal ul, .reveal ol {
+  display: block;
+  margin-left: 0.6em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+/* Title slide */
+.title-slide h1 {
+  font-size: 2.1em;
+  margin-bottom: 0.1em;
+}
+.title-slide .subtitle {
+  font-size: 1em;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1em;
+}
+.title-slide .meta {
+  font-size: 0.6em;
+  color: #888;
+}
+
+/* Act divider slides */
+.act-divider {
+  color: #fff !important;
+}
+.act-divider h2 {
+  font-size: 2.4em;
+  color: #fff;
+}
+.act-divider .act-label {
+  font-size: 0.55em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 0.3em;
+  display: block;
+}
+.act-divider .act-tagline {
+  font-size: 0.7em;
+  font-style: italic;
+  opacity: 0.9;
+  margin-top: 0.4em;
+}
+/* Backgrounds themselves are no longer set here — each slide carries a
+   data-background-color attribute in slides.md instead, which reveal.js
+   renders as a full-bleed layer behind the (scaled) slide content, so the
+   colour fills the whole screen rather than just the slide's own box.
+   The act1-bg/act2-bg/act3-bg/act4-bg classes are now unused for colour
+   but kept on the divider slides in case they're wanted again. */
+
+/* Act tint for content slides (heading colour only, background is native) */
+.act1 h2, .act1 h3 { color: var(--act1); }
+.act2 h2, .act2 h3 { color: var(--act2); }
+.act3 h2, .act3 h3 { color: var(--act3); }
+.act4 h2, .act4 h3 { color: var(--act4); }
+
+.eyebrow {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.75;
+  display: block;
+  margin-bottom: 0.3em;
+}
+.act1 .eyebrow { color: var(--act1); }
+.act2 .eyebrow { color: var(--act2); }
+.act3 .eyebrow { color: var(--act3); }
+.act4 .eyebrow { color: var(--act4); }
+
+/* Callout / punchline box */
+.callout {
+  border-left: 4px solid var(--accent);
+  padding: 0.4em 0.9em;
+  margin-top: 0.5em;
+  background: rgba(217, 164, 65, 0.12);
+  font-size: 0.85em;
+}
+
+.demo-tag {
+  display: inline-block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.42em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  padding: 0.25em 0.7em;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+
+/* two-column layout */
+.cols {
+  display: flex;
+  gap: 1.5em;
+}
+.cols > div { flex: 1; }
+
+/* montage grid for act 3 */
+.montage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+  margin-top: 0.6em;
+  font-size: 0.62em;
+}
+.montage div {
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 6px;
+  padding: 0.6em 0.8em;
+}
+.montage div b {
+  display: block;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: var(--act3);
+  margin-bottom: 0.15em;
+}
+
+.reveal blockquote {
+  font-style: italic;
+  border-left: 3px solid #ccc;
+  padding-left: 0.8em;
+  font-size: 0.85em;
+}
+
+.reveal code {
+  background: rgba(0,0,0,0.06);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+.small {
+  font-size: 0.65em;
+  color: #666;
+}
+
+/* fade-group: a block whose bullet list dims when its punchline fragment
+   is revealed (wired up in index.html via Reveal's fragmentshown/hidden
+   events, since plain CSS can't target a preceding sibling by a later
+   sibling's fragment-visible state without :has() support). */
+.fade-group ul {
+  transition: opacity 0.5s ease;
+}
+.fade-group.revealed ul li {
+  color: #999;
+  transition: color 0.5s ease;
+}
+.reveal-punchline {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin-top: 0.7em;
+}
+
+/* Reflection slides — a distinct recurring slide type (not tied to one
+   act) for stepping back to reflect on process/bigger-picture questions.
+   Use class="reflection" plus data-background-color="#33525c" (the
+   --reflect colour) on the slide's .slide: line. Deliberately calmer and
+   more personal in tone than the act slides: deep contemplative teal,
+   white text, a serif italic eyebrow instead of the sans-serif uppercase
+   one used elsewhere. */
+.reflection {
+  color: #fff;
+}
+.reflection h2, .reflection h3 {
+  color: #fff;
+}
+.reflection .eyebrow {
+  font-family: 'Georgia', 'Iowan Old Style', serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.85;
+}
+.reflection blockquote {
+  border-left-color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.92);
+}
+.reflection a {
+  color: #ffd88a;
+}
+
+/* 2x2 classification grid (e.g. good/bad mathematics x good/bad writing).
+   Checkmarks are plain by default; give one class="fragment" to have it
+   appear on a click after the others (see the AJC submissions reflection
+   slide, where the historically-near-absent quadrant clicks in last). */
+.quad-grid {
+  display: grid;
+  grid-template-columns: auto 8.5em 8.5em;
+  gap: 0.4em;
+  width: fit-content;
+  margin: 1em auto 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.quad-grid .quad-col-label,
+.quad-grid .quad-row-label {
+  font-size: 0.48em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.2em;
+}
+.quad-grid .quad-cell {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  min-height: 3.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+  font-size: 0.55em;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  line-height: 1.15;
+}

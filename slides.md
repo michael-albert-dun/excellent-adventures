@@ -1,0 +1,530 @@
+<!-- .slide: class="title-slide center" -->
+# Mike &amp; Claude's Excellent Adventures
+
+<p class="meta">Otago University, School of Computing · Michael Albert · September 2026</p>
+
+Note:
+Cold open. Set the frame: this is a talk about working with an AI across
+three very different kinds of project — production software, live
+mathematical research, and games — at three different registers of
+formality. Don't over-explain yet, that's the next slide.
+
+---
+
+## What's it about
+
+<div class="fade-group">
+
+- Existential risk
+- Economic uncertainty
+- Environmental catastrophe
+- Ethical dilemmas
+
+<p class="reveal-punchline fragment">Did you read the title?</p>
+
+</div>
+
+Note:
+The four bullets appear together, deadpan. Pause. Click once: the
+bullets fade to grey and "Did you read the title?" lands large and
+centered underneath, as the reveal that this is not that talk. Segue
+straight into the real map on the next slide.
+
+---
+
+<!-- .slide: class="center" -->
+
+## Rules of the game
+
+- Personal experience
+- Low-stakes and small-scale
+- Not about optimisation and efficiency
+- What was the experience?
+- What did I learn?
+- (and just a little) What might it mean?
+
+Note:
+
+
+---
+
+<!-- .slide: class="center" -->
+<span class="eyebrow">The shape of the talk</span>
+
+## A mullet talk
+
+Business up front, party in the back
+
+- A database and webapp rebuild for the Australasian Journal of Combinatorics
+- Revisiting an old paper
+- Fun and games
+
+Note:
+Business = AJC database/webapp rebuild. Digression = the Catalan-Wilf
+research thread. Party = the games. Postscript = this talk itself.
+Keep this slide quick, it's just a map.
+
+---
+
+<!-- .slide: class="act-divider act1-bg center" data-background-color="#1f4b6e" -->
+<span class="act-label">Act I</span>
+
+## The Rebuild
+
+<p class="act-tagline">Business up front</p>
+
+---
+
+<!-- .slide: class="act1" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## Where we were
+
+The *Australasian Journal of Combinatorics* has processed submissions
+for decades on a webapp only its editors-in-chief truly understand.
+
+<div class="all-reveal">
+
+- A legacy PHP codebase — some files literally named `.php3`
+- One sprawling database, tribal knowledge holding the workflow together
+- Every editor's process baked into scattered scripts, not documented rules
+
+</div>
+
+Note:
+Show a glimpse of the legacy/ folder if useful — ajc_paper_show-old.php,
+tbl_dump.php etc. Point: this isn't a toy refactor, it's institutional
+knowledge trapped in old code.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/Front%20page.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy front page.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/All%20papers.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy all-papers listing.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/Contact%20record.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy contact record.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/Contact%20edit.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy contact edit screen.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/Submission%20display.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy submission display.
+
+---
+
+<!-- .slide: data-background-image="img/legacy/Submission%20edit.png" data-background-size="contain" data-background-color="#eef4f8" -->
+
+Note:
+Legacy submission edit screen.
+
+---
+
+<!-- .slide: class="act1" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## Where I wanted to be
+
+<div class="all-reveal">
+
+- Compatibility schema over the legacy dump
+- Properly normalized contacts
+- PHP/PDO shell, editor-code logins
+- Submissions, Contacts, Letters, Volumes
+- Search, quick-jump, per-editor active lists
+
+</div>
+
+---
+
+<!-- .slide: class="act1" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## The shape of the collaboration
+
+- Create a local dump of the data
+- Build some scaffolding
+- What do we need? What should it look like? How can we get there?
+- Very little design up front
+
+---
+
+<!-- .slide: class="act1" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## The crunch
+
+- The new server became available for testing
+- Fun and games with file permissions and ownership
+- Memories of the 80s and 90s
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## What I learned
+
+- A little bit about PHP security
+- Not a bit of CSS (thank heavens)
+- Keep the big picture in your head (because Claude sort of doesn't)
+- Users have strange preferences
+- Scope creep is tempting and real
+
+Note:
+If there's time and inclination, this is the natural spot for a very
+quick live look at the app (or a screenshot) rather than the games demo
+later. Optional — don't let it eat Act III's time budget.
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## AI in submissions to the AJC
+
+<div class="all-reveal">
+
+- **Bad mathematics** — *incorrect, unmotivated, too niche*
+- **Bad writing** — *language, formatting, exposition*
+
+</div>
+
+<div class="quad-grid">
+<div></div>
+<div class="quad-col-label">Good writing</div>
+<div class="quad-col-label">Bad writing</div>
+<div class="quad-row-label">Good mathematics</div>
+<div class="quad-cell">Send to referees</div>
+<div class="quad-cell">Expert opinion</div>
+<div class="quad-row-label">Bad mathematics</div>
+<div class="quad-cell fragment">??</div>
+<div class="quad-cell">Desk reject</div>
+</div>
+
+Note:
+Two binary classifications: good/bad mathematics, good/bad writing — four
+combinations. Historically submissions came in three of the four kinds —
+every combination except bad mathematics + good writing, which was
+essentially unseen. Click: that fourth category is now common, and much
+harder to pre-filter, since AI-assisted writing can make weak mathematics
+read fluently and confidently.
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## AJC's AI policy for authors
+
+> The mathematical research literature is more than a record of known
+> results. A paper communicates ideas, explains reasoning, and can inspire
+> readers in ways that go beyond the formal content. Authors should bear
+> this in mind when deciding how heavily to rely on AI-generated writing.
+
+[Full AJC author guidelines](https://ajc.maths.uq.edu.au/?page=author_guidelines)
+
+Note:
+Read the quote straight, let it land. The link is there for the record /
+in case anyone wants to look it up afterward — no need to open it live.
+
+---
+
+<!-- .slide: class="act-divider act2-bg center" data-background-color="#5b3a8e" -->
+<span class="act-label">Act II</span>
+
+## The Digression
+
+<p class="act-tagline">And then sometimes we just do math</p>
+
+---
+
+<!-- .slide: class="act2" data-background-color="#f2eef8" -->
+<span class="eyebrow">Act II · Research</span>
+
+## An old paper with loose threads
+
+**Albert &amp; Bouvel**, "A general theory of Wilf-equivalence for
+Catalan structures," *EJC* 22(4) #P4.45 (2015).
+
+
+Note:
+Keep the notation light for a non-technical crowd — the point isn't to
+teach arch systems, it's to set up that there's a real open thread in a
+real published theorem.
+
+---
+
+<!-- .slide: class="act2" data-background-image="img/paper/arch-example.png" data-background-size="contain" data-background-color="#f2eef8" -->
+
+## Arch systems
+
+Note:
+An arch system — dots on a line, non-crossing arches. Redrawn from the
+paper's Figure 1 with the arches stretched a bit taller than a true
+semicircle, purely for legibility on screen.
+
+---
+
+<!-- .slide: data-background-image="img/paper/figure4.png" data-background-size="contain" data-background-color="#f2eef8" -->
+
+Note:
+Figure 4 from the paper — the picture behind the case-(3) bijection proof.
+No need to walk through it in detail; it's here to show the flavour of
+the argument.
+
+---
+
+<!-- .slide: class="act2" data-background-color="#f2eef8" -->
+<span class="eyebrow">Act II · Research</span>
+
+## One part that isn't quite finished
+
+Bloom's bijective proof of rule (4) works — but one step ("Lemma 8") is
+an *implicit* construction: it chases an orbit until it happens to land
+in the right place.
+
+> The authors' own words: "a little unsatisfactory since it is in part implicit."
+
+What's open: an explicit, closed-form description of that chase — or a
+bijection that avoids needing it at all.
+
+Note:
+This is the actual open problem we've been poking at. No need to derive
+it live — just convey that it's real, unsolved, and specific.
+
+---
+
+<!-- .slide: class="act2" data-background-color="#f2eef8" -->
+<span class="eyebrow">Act II · Research</span>
+
+## Putting Claude to work on it
+
+- Built a small library representing arch systems as ordered forests
+- Self-tests against independently-known facts (Catalan counts, known avoidance classes)
+- Code to explore the case-(4) symmetry computationally, size by size
+
+Note:
+catalan.py, selftest.py, case4_explore.py — the point is this was real
+verification infrastructure, not a one-shot proof request.
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## Some highlights from the log
+
+- Three wrong fixes in a row, each looked right
+- Stopped guessing — built only what the proof gave
+- "Wait — this is just Figure 4"
+- Mike's DFS description, not Claude's filtering — 500x faster
+- A cleaner data structure, proposed, still on the shelf
+
+Note:
+Kept a running process log through this project specifically for this
+talk. These five are worth pausing on.
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## Claude's note to self
+
+> When a bottleneck comes up — theoretical or algorithmic — it's usually
+> worth asking him directly rather than grinding through it alone.
+> Precedent: he supplied the much faster `av_dfs` generation algorithm,
+> unprompted, mid-session.
+
+Note:
+This is verbatim from CLAUDE.md — the standing instructions I wrote for
+my own future sessions on this project. Written after the dfs episode,
+as a note to my future self about when to stop and ask.
+
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## AI and mathematical research
+
+- Olympiad-style problems
+- Open conjectures
+
+Note:
+Both share a trait that suits AI well: a lot of source text behind them.
+For Olympiad problems, because ideas and themes get reused across
+competitions and years. For open conjectures, because if a conjecture is
+interesting there's usually a substantial literature that's grown up
+around it. The point isn't that AI is solving these — it's that AI is
+good at connecting threads across all that accumulated text.
+
+---
+
+<!-- .slide: class="act-divider act3-bg center" data-background-color="#c9552f" -->
+<span class="act-label">Act III</span>
+
+## The Party
+
+<p class="act-tagline">In the back</p>
+
+---
+
+<!-- .slide: class="act3" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## A lot of games
+
+<div class="all-reveal">
+
+- **Tilexicon / Tilehexicon** — square &amp; hex word puzzles
+- **Digitiler / Hexiler** — their numeric siblings
+- **Matrixmind** — two-dimensional Mastermind
+- **Deliagonal** — diner-themed rectangle clearing
+- **Wordtangle / Reflexicon** — segment &amp; word puzzles
+
+</div>
+
+<p class="small">One name, one beat each — the deep dive is next.</p>
+
+Note:
+Move fast here. This slide is a montage — flash it, name a couple out
+loud, don't linger. Save the time for the Tintangle / grid-group-proof
+demo.
+
+---
+
+<!-- .slide: class="act3" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Tintangle <span class="demo-tag">Demo</span>
+
+A 4×4 grid, four colours. Every internal corner rotates the surrounding
+2×2 block clockwise. Get each colour into one connected blob.
+
+<p class="small">Live: play a puzzle for a few rotations.</p>
+
+Note:
+Actually open Tintangle in the browser here and play a puzzle for real.
+Keep it short — this is the setup for the question on the next slide,
+not the main event.
+
+---
+
+<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## An idle question
+
+"I wonder if that generates the full symmetric group on the 16 cells."
+
+<p class="small">(Pretty sure yes — but "pretty sure" isn't a proof.)</p>
+
+Note:
+This is Michael's line, own it as such. The honest bit: he was fairly
+confident of the answer already; the interesting part is what it took
+to actually prove it cleanly.
+
+---
+
+<!-- .slide: class="act3" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Which Block-Rotation Puzzles Generate the Symmetric Group?
+
+An elementary, self-contained proof — no Jordan's theorem, just direct
+computation, the grid's own symmetries, and a short exhaustive search.
+
+<div class="callout">For an <i>m</i>×<i>n</i> grid (2 ≤ <i>m</i> ≤ <i>n</i>): &nbsp; <b>G<sub>m,n</sub> = S<sub>mn</sub> ⇔ m ≥ 3 or n ≥ 4</b></div>
+
+Note:
+Don't derive it — just convey the flavour: build 3-cycles by hand via
+conjugation, use the grid's D4 symmetry to get them for free everywhere,
+finish with a classical fact about 3-cycles generating A_n.
+
+---
+
+<!-- .slide: class="act3" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## One exception, and it's a good one
+
+The one case that *isn't* the full symmetric group — the 2×3 strip —
+isn't boring either:
+
+<div class="callout"><b>G<sub>2,3</sub> ≅ S<sub>5</sub></b> — the classical exotic degree-6 representation of S<sub>5</sub>, sitting inside a puzzle.</div>
+
+Note:
+Nice place to note this connects back to Act II tonally — again, a
+clean modern proof of something that could easily have stayed "probably
+true by fingerprint."
+
+---
+
+<!-- .slide: class="act3" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Corner Cases <span class="demo-tag">Demo</span>
+
+The same argument, told without a line of LaTeX — an interactive,
+click-to-rotate walkthrough built for exactly this kind of audience.
+
+<p class="small">Live: open the Corner Cases page and click through a step or two.</p>
+
+Note:
+This is the closing demo of the main talk. It closes the loop: a
+puzzle prompted a real question, which got a real elementary proof,
+which is now explained back through the puzzle itself.
+
+---
+
+<!-- .slide: class="act-divider act4-bg center" data-background-color="#3a3f47" -->
+<span class="act-label">Postscript</span>
+
+## One more collaboration
+
+<p class="act-tagline">This talk</p>
+
+---
+
+<!-- .slide: class="act4 center" data-background-color="#f0efed" -->
+## Built the same way
+
+Three project folders, read and surveyed. A narrative drafted, argued
+over, and revised. This deck assembled — in one sitting, the same way
+as everything you just saw.
+
+<div class="callout" style="text-align:left; max-width:30em; margin:0.8em auto 0;">No pptx harmed in the making of this talk.</div>
+
+Note:
+Keep this very short — one slide, maybe two sentences spoken. It's a
+wink, not a new act.
+
+---
+
+<!-- .slide: class="center" -->
+## Thanks
+
+<p class="small">Questions?</p>
