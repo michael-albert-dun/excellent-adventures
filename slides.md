@@ -389,29 +389,7 @@ good at connecting threads across all that accumulated text.
 
 <p class="act-tagline">In the back</p>
 
----
 
-<!-- .slide: class="act3" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
-
-## A lot of games
-
-<div class="all-reveal">
-
-- **Tilexicon / Tilehexicon** — square &amp; hex word puzzles
-- **Digitiler / Hexiler** — their numeric siblings
-- **Matrixmind** — two-dimensional Mastermind
-- **Deliagonal** — diner-themed rectangle clearing
-- **Wordtangle / Reflexicon** — segment &amp; word puzzles
-
-</div>
-
-<p class="small">One name, one beat each — the deep dive is next.</p>
-
-Note:
-Move fast here. This slide is a montage — flash it, name a couple out
-loud, don't linger. Save the time for the Tintangle / grid-group-proof
-demo.
 
 ---
 
@@ -422,8 +400,6 @@ demo.
 
 A 4×4 grid, four colours. Every internal corner rotates the surrounding
 2×2 block clockwise. Get each colour into one connected blob.
-
-<p class="small">Live: play a puzzle for a few rotations.</p>
 
 Note:
 Actually open Tintangle in the browser here and play a puzzle for real.
@@ -453,24 +429,21 @@ to actually prove it cleanly.
 
 ## Which Block-Rotation Puzzles Generate the Symmetric Group?
 
-An elementary, self-contained proof — no Jordan's theorem, just direct
-computation, the grid's own symmetries, and a short exhaustive search.
+- Claude was very keen to use the heavy machinery (Jordan's theorem)
+- There was a literature, but a lot of it was recreational and a bit sloppy
+- Let's try to build an elementary proof that's clear and interactive
 
-<div class="callout">For an <i>m</i>×<i>n</i> grid (2 ≤ <i>m</i> ≤ <i>n</i>): &nbsp; <b>G<sub>m,n</sub> = S<sub>mn</sub> ⇔ m ≥ 3 or n ≥ 4</b></div>
-
-Note:
-Don't derive it — just convey the flavour: build 3-cycles by hand via
-conjugation, use the grid's D4 symmetry to get them for free everywhere,
-finish with a classical fact about 3-cycles generating A_n.
+<p style="text-align:center;"><a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag">Demo</a></p>
 
 ---
+
 
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
 <span class="eyebrow">Act III · Games</span>
 
-## One exception, and it's a good one
+## One non-obvious exception, and it's a good one
 
-The one case that *isn't* the full symmetric group — the 2×3 strip —
+The 2×3 strip does not give the full group, but it
 isn't boring either:
 
 <div class="callout"><b>G<sub>2,3</sub> ≅ S<sub>5</sub></b> — the classical exotic degree-6 representation of S<sub>5</sub>, sitting inside a puzzle.</div>
@@ -485,19 +458,26 @@ true by fingerprint."
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
 <span class="eyebrow">Act III · Games</span>
 
-## Corner Cases <a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag">Demo</a>
+## A lot of games
 
-The same argument, told without a line of LaTeX — an interactive,
-click-to-rotate walkthrough built for exactly this kind of audience.
+<div class="all-reveal">
 
-<p class="small">Live: open the Corner Cases page and click through a step or two.</p>
+- **Tilexicon / Tilehexicon** — square &amp; hex word puzzles
+- **Digitiler / Hexiler** — their numeric siblings
+- **Matrixmind** — two-dimensional Mastermind
+- **Deliagonal** — diner-themed rectangle clearing
+- **Wordtangle / Reflexicon** — segment &amp; word puzzles
+
+</div>
 
 Note:
-This is the closing demo of the main talk. It closes the loop: a
-puzzle prompted a real question, which got a real elementary proof,
-which is now explained back through the puzzle itself.
+Move fast here. This slide is a montage — flash it, name a couple out
+loud, don't linger. Save the time for the Tintangle / grid-group-proof
+demo.
+
 
 ---
+
 
 <!-- .slide: class="act-divider act4-bg center" data-background-color="#3a3f47" -->
 <span class="act-label">Postscript</span>
