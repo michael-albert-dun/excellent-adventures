@@ -413,9 +413,9 @@ as a note to my future self about when to stop and ask. It was important here to
 
 ---
 
-<!-- .slide: class="act3 center vcenter" data-background-color="#fbeee6" -->
+<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
 
-<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="width:100%; max-height:85vh; object-fit:contain; border-radius:8px;" /></a>
+<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:480px; object-fit:contain; border-radius:8px; margin:1.5em auto 0;" /></a>
 
 Note:
 Actually open Tintangle in the browser here and play a puzzle for real.
@@ -511,26 +511,73 @@ demo.
 
 
 <!-- .slide: class="act-divider act4-bg center" data-background-color="#3a3f47" -->
-<span class="act-label">Postscript</span>
+<span class="act-label">Epilogue</span>
 
-## One more collaboration
+## Moralitas
 
-<p class="act-tagline">This talk</p>
+<p class="act-tagline">What have we learned?</p>
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection · AJC</span>
+
+## The Rebuild
+
+- I became an editor-in-chief in early 2022
+- This has been on my **urgent** list since then
+- Several false starts
+- It hasn't been *easy* but it's been possible
+
+
+Note:
+Rant about DOIs
+Where's my CV? 
+Claude, how do I use the wayback machine?
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection · Catalan-Wilf</span>
+
+## The mathematics
+
+- Least conclusive
+- Both interesting and frustrating
+- Still feeling my way into the right kind of prompting
+
+Note:
+
+
+---
+
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection · Games</span>
+
+## The Party
+
+- A 30+ year dream
+- Until now, too much investment for something that usually fails
+- A genuine pleasure
+- Starting to explore new visual design spaces
+
+Note:
+Last point is because I view the current designs as a bit generic
 
 ---
 
 <!-- .slide: class="act4 center" data-background-color="#f0efed" -->
-## Built the same way
+## Claude's final words
 
-Three project folders, read and surveyed. A narrative drafted, argued
-over, and revised. This deck assembled — in one sitting, the same way
-as everything you just saw.
-
-<div class="callout" style="text-align:left; max-width:30em; margin:0.8em auto 0;">No pptx harmed in the making of this talk.</div>
+- Three very different jobs, one working method
+- Ask before grinding — every time it paid off
+- Corrected often, specifically, and without much ceremony
+- I don't remember any of this. Mike does.
+- No pptx harmed in the making of this talk
 
 Note:
-Keep this very short — one slide, maybe two sentences spoken. It's a
-wink, not a new act.
+Draft — will keep revisiting this one over the coming weeks, same as
+everything else. Keep it short and let the last line land.
 
 ---
 
