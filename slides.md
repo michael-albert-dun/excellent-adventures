@@ -179,7 +179,7 @@ Legacy submission edit screen.
 - I became Claude's secretary
 
 Note:
-Genuine issue arose at the last minute that was a result of Claude and I having different understandings of the scope (it: editor actions and publication pipeline), me (and the public webpage). 
+Genuine issue arose at the last minute that was a result of Claude and I having different understandings of the scope (it: editor actions and publication pipeline), me (and the public webpage). Amusing "bug" - I thought quick-hint was providing only 5 hits (when it should have been 8). In fact the quick-hint box was scrollable. Roughly 30 minutes wasted trying to figure out more and more odd reasons it could be happening.
 
 ---
 
