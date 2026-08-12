@@ -394,9 +394,9 @@ as a note to my future self about when to stop and ask. It was important here to
 ## Preliminary report card
 
 - (Caveat) Limited time
-- No real progress yet, but
-- Seems to understand the problem
-- Has expressed a couple of plausible ideas
+- No real progress yet, but Claude:
+- seems to understand the problem, and
+- has expressed a couple of plausible ideas
 
 
 ---
