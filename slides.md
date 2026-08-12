@@ -11,7 +11,7 @@ formality. Don't over-explain yet, that's the next slide.
 
 ---
 
-## What's it about
+## What is it about
 
 <div class="fade-group">
 
@@ -36,7 +36,7 @@ straight into the real map on the next slide.
 
 ## Rules of the game
 
-- Personal experience
+- Personal experiences
 - Low-stakes and small-scale
 - Not about optimisation and efficiency
 - What was the experience?
@@ -81,7 +81,7 @@ Keep this slide quick, it's just a map.
 ## Where we were
 
 The *Australasian Journal of Combinatorics* has processed submissions
-for decades on a webapp only its editors-in-chief truly understand.
+for decades on a webapp <span class="fragment strike" data-fragment-index="0">only its editors-in-chief truly understand</span><span class="fragment" data-fragment-index="0"> no one understands</span>
 
 <div class="all-reveal">
 
