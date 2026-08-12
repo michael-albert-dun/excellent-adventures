@@ -215,7 +215,7 @@ later. Optional — don't let it eat Act III's time budget.
 
 </div>
 
-<div class="quad-grid">
+<div class="quad-grid fragment">
 <div></div>
 <div class="quad-col-label">Good writing</div>
 <div class="quad-col-label">Bad writing</div>
@@ -297,6 +297,8 @@ Note:
 Keep the notation light for a non-technical crowd — the point isn't to
 teach arch systems, it's to set up that there's a real open thread in a
 real published theorem.
+If you think that's "niche" the first 7 pages of this 29 page paper explain
+why it isn't ;)
 
 ---
 
