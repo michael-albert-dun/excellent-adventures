@@ -281,6 +281,7 @@ competitions and years. For open conjectures, because if a conjecture is
 interesting there's usually a substantial literature that's grown up
 around it. The point isn't that AI is solving these — it's that AI is
 good at connecting threads across all that accumulated text.
+
 ---
 
 <!-- .slide: class="act2" data-background-color="#f2eef8" -->
