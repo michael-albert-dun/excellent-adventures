@@ -397,6 +397,7 @@ as a note to my future self about when to stop and ask. It was important here to
 - No real progress yet, but Claude:
 - seems to understand the problem, and
 - has expressed a couple of plausible ideas
+- (though the ones that panned out were mostly Mike's)
 
 
 ---
