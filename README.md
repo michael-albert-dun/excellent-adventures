@@ -104,6 +104,7 @@ Refresh the browser tab after saving changes to `slides.md`.
 
 Four acts: **The Rebuild** (AJC), **The Digression** (Catalan-Wilf research),
 **The Party** (games, ending on Tintangle → the block-rotation-group proof →
-the Corner Cases demo), and a short **Postscript** on this talk itself.
-Live demos (Tintangle, Corner Cases) are meant to happen by switching to a
-separate browser tab, not embedded in the deck — see the "Demo" slides.
+the Corner Cases demo), and an **Epilogue** ("Moralitas") reflecting on all
+three, ending with "Claude's final words." Live demos (Tintangle, Corner
+Cases) are meant to happen by switching to a separate browser tab, not
+embedded in the deck — see the "Demo" slides.

@@ -11,30 +11,29 @@ formality. Don't over-explain yet, that's the next slide.
 
 ---
 
-## What is it about
+## Outline
 
-<div class="fade-group">
+<ul>
+<li class="fragment strike" data-fragment-index="0">Existential risk</li>
+<li class="fragment strike" data-fragment-index="0">Economic uncertainty</li>
+<li class="fragment strike" data-fragment-index="0">Environmental catastrophe</li>
+<li class="fragment strike" data-fragment-index="0">Ethical dilemmas</li>
+</ul>
 
-- Existential risk
-- Economic uncertainty
-- Environmental catastrophe
-- Ethical dilemmas
-
-<p class="reveal-punchline fragment">Did you read the title?</p>
-
-</div>
+<p class="reveal-punchline fragment" data-fragment-index="0">Did you read the title?</p>
 
 Note:
-The four bullets appear together, deadpan. Pause. Click once: the
-bullets fade to grey and "Did you read the title?" lands large and
-centered underneath, as the reveal that this is not that talk. Segue
-straight into the real map on the next slide.
+The four bullets appear together, deadpan. Pause. Click once: all four
+strike through at once (same crossout as "Where we were") and "Did you
+read the title?" lands large and centered underneath, as the reveal that
+this is not that talk. Segue straight into the real map on the next
+slide.
 
 ---
 
 <!-- .slide: class="center" -->
 
-## Rules of the game
+## Story time
 
 - Personal experiences
 - Low-stakes and small-scale
