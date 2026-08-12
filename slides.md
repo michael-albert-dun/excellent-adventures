@@ -264,6 +264,25 @@ in case anyone wants to look it up afterward — no need to open it live.
 
 ---
 
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection</span>
+
+## AI and mathematical research successes
+
+- Olympiad-style problems
+- Open conjectures
+- What do they have in common?
+- What's another domain we could play around in?
+
+Note:
+Both share a trait that suits AI well: a lot of source text behind them.
+For Olympiad problems, because ideas and themes get reused across
+competitions and years. For open conjectures, because if a conjecture is
+interesting there's usually a substantial literature that's grown up
+around it. The point isn't that AI is solving these — it's that AI is
+good at connecting threads across all that accumulated text.
+---
+
 <!-- .slide: class="act2" data-background-color="#f2eef8" -->
 <span class="eyebrow">Act II · Research</span>
 
@@ -359,10 +378,11 @@ talk. These five are worth pausing on.
 > Precedent: he supplied the much faster `av_dfs` generation algorithm,
 > unprompted, mid-session.
 
+
 Note:
 This is verbatim from CLAUDE.md — the standing instructions I wrote for
 my own future sessions on this project. Written after the dfs episode,
-as a note to my future self about when to stop and ask.
+as a note to my future self about when to stop and ask. It was important here to convince Claude that I was smart - while in the AJC refactor it was import to convince them that I was dumb.
 
 
 ---
@@ -370,18 +390,13 @@ as a note to my future self about when to stop and ask.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection</span>
 
-## AI and mathematical research
+## Preliminary report card
 
-- Olympiad-style problems
-- Open conjectures
+- (Caveat) Limited time
+- No real progress yet, but
+- Seems to understand the problem
+- Has expressed a couple of plausible ideas
 
-Note:
-Both share a trait that suits AI well: a lot of source text behind them.
-For Olympiad problems, because ideas and themes get reused across
-competitions and years. For open conjectures, because if a conjecture is
-interesting there's usually a substantial literature that's grown up
-around it. The point isn't that AI is solving these — it's that AI is
-good at connecting threads across all that accumulated text.
 
 ---
 
