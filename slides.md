@@ -146,8 +146,8 @@ Legacy submission edit screen.
 
 <div class="all-reveal">
 
-- 2020s, not 1990s
-- Make the everyday tasks easy
+- It's the 2020s, not the 1990s
+- Make everyday tasks easy
 - Don't add friction or rigidity
 - Every action recorded, not just remembered
 - The next me, or their Claude-equivalent, should be able to pick it up seamlessly
@@ -180,11 +180,12 @@ schema, workflows) meant to outlive this specific rewrite.
 
 - The new server became available for testing
 - Fun and games with file permissions and ownership
-- Memories of the 80s and 90s
+- Back to the 80s!
 - I became Claude's secretary
 
 Note:
 Genuine issue arose at the last minute that was a result of Claude and I having different understandings of the scope (it: editor actions and publication pipeline), me (and the public webpage). Amusing "bug" - I thought quick-hint was providing only 5 hits (when it should have been 8). In fact the quick-hint box was scrollable. Roughly 30 minutes wasted trying to figure out more and more odd reasons it could be happening.
+Tar, double hop scp, ....
 
 ---
 
