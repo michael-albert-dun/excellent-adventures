@@ -11,7 +11,7 @@ formality. Don't over-explain yet, that's the next slide.
 
 ---
 
-## Outline
+## AI in 2026
 
 <ul>
 <li class="fragment strike" data-fragment-index="0">Existential risk</li>
@@ -104,24 +104,10 @@ Legacy front page.
 
 ---
 
-<!-- .slide: data-background-image="img/legacy/All%20papers.png" data-background-size="contain" data-background-color="#eef4f8" -->
-
-Note:
-Legacy all-papers listing.
-
----
-
 <!-- .slide: data-background-image="img/legacy/Contact%20record.png" data-background-size="contain" data-background-color="#eef4f8" -->
 
 Note:
 Legacy contact record.
-
----
-
-<!-- .slide: data-background-image="img/legacy/Contact%20edit.png" data-background-size="contain" data-background-color="#eef4f8" -->
-
-Note:
-Legacy contact edit screen.
 
 ---
 
@@ -201,7 +187,7 @@ Tar, double hop scp, ....
 <li class="fragment" data-fragment-index="3">165 commits over about 12 weeks</li>
 </ul>
 
-<div class="callout fragment" data-fragment-index="4">Roughly 20% smaller than the legacy system — while doing more.</div>
+<div class="callout fragment" data-fragment-index="4">Roughly 20% smaller than the legacy system — while doing (a lot) more.</div>
 
 Note:
 Ballpark figures — wc -l / information_schema, not cloc, so good enough
@@ -315,7 +301,7 @@ in case anyone wants to look it up afterward — no need to open it live.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection</span>
 
-## AI and mathematical research successes
+## AI and mathematical research
 
 - Olympiad-style problems
 - Open conjectures
