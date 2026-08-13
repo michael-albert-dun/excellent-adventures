@@ -192,7 +192,7 @@ Tar, double hop scp, ....
 <!-- .slide: class="act1" data-background-color="#eef4f8" -->
 <span class="eyebrow">Act I · Business</span>
 
-## The data? I can't handle the data.
+## The data? I can't handle the data!
 
 <ul>
 <li class="fragment" data-fragment-index="0">New app: ~16k lines across 77 files</li>
@@ -201,7 +201,7 @@ Tar, double hop scp, ....
 <li class="fragment" data-fragment-index="3">165 commits over about 12 weeks</li>
 </ul>
 
-<div class="callout fragment" data-fragment-index="4">Roughly 20% smaller than the legacy system — while doing more.</div>
+<div class="callout fragment" data-fragment-index="4">Roughly 20% smaller than the legacy system — while doing (a lot) more.</div>
 
 Note:
 Ballpark figures — wc -l / information_schema, not cloc, so good enough
