@@ -142,17 +142,22 @@ Legacy submission edit screen.
 <!-- .slide: class="act1" data-background-color="#eef4f8" -->
 <span class="eyebrow">Act I · Business</span>
 
-## Where I wanted to be
+## Back in the future
 
 <div class="all-reveal">
 
-- Compatibility schema over the legacy dump
-- Properly normalized contacts
-- PHP/PDO shell, editor-code logins
-- Submissions, Contacts, Letters, Volumes
-- Search, quick-jump, per-editor active lists
+- 2020s, not 1990s
+- Make the everyday tasks easy
+- Don't add friction or rigidity
+- Every action recorded, not just remembered
+- The next me, or their Claude-equivalent, should be able to pick it up seamlessly
 
 </div>
+
+Note:
+"Recorded" = the structured audit trail/notes; "documented" covers both
+that internal record-keeping and the external docs (architecture,
+schema, workflows) meant to outlive this specific rewrite.
 
 ---
 
