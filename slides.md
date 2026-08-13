@@ -315,7 +315,7 @@ in case anyone wants to look it up afterward — no need to open it live.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection</span>
 
-## AI and mathematical research successes
+## AI and mathematical research
 
 - Olympiad-style problems
 - Open conjectures
