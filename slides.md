@@ -505,27 +505,6 @@ Live in the browser again. Come back for Tintangle.
 
 ---
 
-<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
-
-## Tintangle
-
-<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:380px; object-fit:contain; border-radius:8px; margin:0.8em auto 0;" /></a>
-
-<p class="small" style="text-align:center; margin-top:0.6em;">This one raised a real group-theory question — a quick word on that, then back to the deck.</p>
-
-Note:
-Live in the browser here too. The question that started it: does this
-block-rotation puzzle generate the full symmetric group on the 16
-cells? Gesture at it — pretty sure yes, and it turned into a genuine
-elementary proof — without walking the proof itself; that's not part of
-this talk anymore. Interactive proof demo if wanted:
-michael-albert-dun.github.io/tintangle/grid-group-proof/. Come back to
-the deck for the reflection after.
-
-
----
-
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection</span>
 
@@ -542,7 +521,7 @@ the deck for the reflection after.
 <!-- .slide: class="act-divider act4-bg center" data-background-color="#3a3f47" -->
 <span class="act-label">Epilogue</span>
 
-## Moralitas
+## Morals
 
 <p class="act-tagline">What have we learned?</p>
 
