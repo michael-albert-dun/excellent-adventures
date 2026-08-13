@@ -1,7 +1,7 @@
 <!-- .slide: class="title-slide center" -->
 # Mike &amp; Claude's Excellent Adventures
 
-<p class="meta">Otago University, School of Computing · Michael Albert · September 2026</p>
+<p class="meta">Otago University School of Computing · Michael Albert · September 2026</p>
 
 Note:
 Cold open. Set the frame: this is a talk about working with an AI across
