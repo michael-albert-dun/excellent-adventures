@@ -183,6 +183,31 @@ Genuine issue arose at the last minute that was a result of Claude and I having 
 
 ---
 
+<!-- .slide: class="act1" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## The data? I can't handle the data.
+
+<ul>
+<li class="fragment" data-fragment-index="0">New app: ~16k lines across 77 files</li>
+<li class="fragment" data-fragment-index="1">Legacy: ~20k lines across 148 files</li>
+<li class="fragment" data-fragment-index="2">Live database: 23 tables, ~23MB, 5,298 submissions, 9,524 contacts</li>
+<li class="fragment" data-fragment-index="3">165 commits over about 12 weeks</li>
+</ul>
+
+<div class="callout fragment" data-fragment-index="4">Roughly 20% smaller than the legacy system — while doing more.</div>
+
+Note:
+Ballpark figures — wc -l / information_schema, not cloc, so good enough
+for order of magnitude, not exact. Worth a laugh: the legacy tree also
+carries a bundled phpMyAdmin install nobody asked for, 242 files and
+66,517 lines, not even AJC's own code — excluded from the legacy count
+above to keep the comparison fair. The "more" in the callout: structured
+audit trail/notes, public landing pages with MathJax, automated volume
+tracking — none of which the legacy system had.
+
+---
+
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection</span>
 
@@ -199,6 +224,24 @@ Note:
 If there's time and inclination, this is the natural spot for a very
 quick live look at the app (or a screenshot) rather than the games demo
 later. Optional — don't let it eat Act III's time budget.
+
+---
+
+<!-- .slide: class="act1 center" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
+
+## My greatest accomplishment
+
+<div style="position:relative; display:inline-block; margin-top:0.8em;">
+<img src="img/new/greatest-accomplishment.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:460px; object-fit:contain; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.15);" />
+<div class="fragment" style="position:absolute; left:74.7%; top:17.2%; width:24.3%; height:13.5%; border:4px solid #e0342a; border-radius:50%; box-shadow:0 0 0 2px rgba(255,255,255,0.55);"></div>
+</div>
+
+Note:
+Self-submitted a P≠NP paper to my own journal, then rejected it myself
+("I thought better of him"). Let the room read it — no need to narrate
+the screenshot line by line. Click: circle the Polite/Blunt rejection
+buttons — the actual punchline.
 
 ---
 
@@ -345,7 +388,7 @@ it live — just convey that it's real, unsolved, and specific.
 
 - Built a small library representing arch systems as ordered forests
 - Self-tests against independently-known facts (Catalan counts, known avoidance classes)
-- Code to explore the case-(4) symmetry computationally, size by size
+- Code to chase Bloom's implicit step
 
 Note:
 catalan.py, selftest.py, case4_explore.py — the point is this was real
@@ -396,9 +439,9 @@ as a note to my future self about when to stop and ask. It was important here to
 
 - (Caveat) Limited time
 - No real progress yet, but Claude:
-- seems to understand the problem, and
-- has expressed a couple of plausible ideas
-- (though the ones that panned out were mostly Mike's)
+    - seems to understand the problem, and
+    - has expressed a couple of plausible ideas
+    - (though the ones that panned out were mostly Mike's)
 
 
 ---
@@ -414,66 +457,6 @@ as a note to my future self about when to stop and ask. It was important here to
 
 ---
 
-<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
-
-<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:480px; object-fit:contain; border-radius:8px; margin:1.5em auto 0;" /></a>
-
-Note:
-Actually open Tintangle in the browser here and play a puzzle for real.
-Keep it short — this is the setup for the question on the next slide,
-not the main event.
-
----
-
-<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
-
-## An idle question
-
-"I wonder if that generates the full symmetric group on the 16 cells."
-
-<p class="small">(Pretty sure yes — but "pretty sure" isn't a proof.)</p>
-
-Note:
-This is Michael's line, own it as such. The honest bit: he was fairly
-confident of the answer already; the interesting part is what it took
-to actually prove it cleanly.
-
----
-
-<!-- .slide: class="act3" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
-
-## Which Block-Rotation Puzzles Generate the Symmetric Group?
-
-<ul>
-<li class="fragment" data-fragment-index="0">Claude was very keen to use the heavy machinery (Jordan's theorem)</li>
-<li class="fragment" data-fragment-index="1">There was a literature, but a lot of it was recreational and a bit sloppy</li>
-<li class="fragment" data-fragment-index="2">Let's try to build an elementary proof that's clear and interactive</li>
-</ul>
-
-<p class="fragment" data-fragment-index="3" style="text-align:center;"><a href="https://michael-albert-dun.github.io/tintangle/grid-group-proof/" target="_blank" rel="noopener" class="demo-tag demo-tag-lg">Demo</a></p>
-
----
-
-
-<!-- .slide: class="act3" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
-
-## One non-obvious exception, and it's a good one
-
-The 2×3 strip does not give the full group, but it
-isn't boring either:
-
-<div class="callout"><b>G<sub>2,3</sub> ≅ S<sub>5</sub></b> — the classical exotic degree-6 representation of S<sub>5</sub>, sitting inside a puzzle.</div>
-
-Note:
-Nice place to note this connects back to Act II tonally — again, a
-clean modern proof of something that could easily have stayed "probably
-true by fingerprint."
-
----
-
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
 <span class="eyebrow">Act III · Games</span>
 
@@ -481,19 +464,72 @@ true by fingerprint."
 
 <div class="all-reveal">
 
-- **Tilexicon / Tilehexicon** — square &amp; hex word puzzles
-- **Digitiler / Hexiler** — their numeric siblings
-- **Matrixmind** — two-dimensional Mastermind
-- **Deliagonal** — diner-themed rectangle clearing
-- **Wordtangle / Reflexicon** — segment &amp; word puzzles
+- **<a href="https://michael-albert-dun.github.io/tilexicon/" target="_blank" rel="noopener">Tilexicon</a> / <a href="https://michael-albert-dun.github.io/tilehexicon/" target="_blank" rel="noopener">Tilehexicon</a>** — square &amp; hex word puzzles
+- **<a href="https://michael-albert-dun.github.io/digitiler/" target="_blank" rel="noopener">Digitiler</a> / <a href="https://michael-albert-dun.github.io/hexiler/" target="_blank" rel="noopener">Hexiler</a>** — their numeric siblings
+- **<a href="https://michael-albert-dun.github.io/matrixmind/" target="_blank" rel="noopener">Matrixmind</a>** — two-dimensional Mastermind
+- **<a href="https://michael-albert-dun.github.io/deliagonal/" target="_blank" rel="noopener">Deliagonal</a>** — diner-themed rectangle clearing
+- **<a href="https://michael-albert-dun.github.io/tintangle/wordtangle/" target="_blank" rel="noopener">Wordtangle</a> / <a href="https://michael-albert-dun.github.io/tintangle/reflexicon/" target="_blank" rel="noopener">Reflexicon</a>** — segment &amp; word puzzles
 - All at <a href="https://michael-albert-dun.github.io/" target="_blank" rel="noopener">https://michael-albert-dun.github.io/</a>
 
 </div>
 
 Note:
 Move fast here. This slide is a montage — flash it, name a couple out
-loud, don't linger. Save the time for the Tintangle / grid-group-proof
-demo.
+loud, don't linger. Save the time for the three live demos next.
+
+---
+
+<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Tilexicon
+
+My first game in this suite.
+
+<p style="text-align:center;"><a href="https://michael-albert-dun.github.io/tilexicon/" target="_blank" rel="noopener" class="demo-tag demo-tag-lg">Demo</a></p>
+
+Note:
+Switch to the browser here and play/talk through it live — abandon the
+deck for this bit. Come back for Deliagonal.
+
+---
+
+<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Deliagonal
+
+<div class="all-reveal">
+
+- A genuinely new mechanic (?)
+- Trying to flex a bit in visual design
+
+</div>
+
+<p style="text-align:center;"><a href="https://michael-albert-dun.github.io/deliagonal/" target="_blank" rel="noopener" class="demo-tag demo-tag-lg">Demo</a></p>
+
+Note:
+Live in the browser again. Come back for Tintangle.
+
+---
+
+<!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
+<span class="eyebrow">Act III · Games</span>
+
+## Tintangle
+
+<a href="https://michael-albert-dun.github.io/tintangle/" target="_blank" rel="noopener"><img src="img/new/tintangle-board.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:380px; object-fit:contain; border-radius:8px; margin:0.8em auto 0;" /></a>
+
+<p class="small" style="text-align:center; margin-top:0.6em;">This one raised a real group-theory question — a quick word on that, then back to the deck.</p>
+
+Note:
+Live in the browser here too. The question that started it: does this
+block-rotation puzzle generate the full symmetric group on the 16
+cells? Gesture at it — pretty sure yes, and it turned into a genuine
+elementary proof — without walking the proof itself; that's not part of
+this talk anymore. Interactive proof demo if wanted:
+michael-albert-dun.github.io/tintangle/grid-group-proof/. Come back to
+the deck for the reflection after.
 
 
 ---
@@ -506,7 +542,7 @@ demo.
 - Rapid prototyping for interaction
 - Experiments on configuration generation and solution uniqueness
 - Final tweaking of UI
-- Learns from experience
+- Learns from experience - each game is a little easier to build than the last one
 
 ---
 
