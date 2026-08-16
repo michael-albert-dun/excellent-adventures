@@ -14,10 +14,11 @@ formality. Don't over-explain yet, that's the next slide.
 ## Outline
 
 <ul>
-<li class="fragment strike" data-fragment-index="0">Existential risk</li>
-<li class="fragment strike" data-fragment-index="0">Economic uncertainty</li>
-<li class="fragment strike" data-fragment-index="0">Environmental catastrophe</li>
-<li class="fragment strike" data-fragment-index="0">Ethical dilemmas</li>
+<li class="fragment strike" data-fragment-index="0">Existential Endgame</li>
+<li class="fragment strike" data-fragment-index="0">Economic Erosion</li>
+<li class="fragment strike" data-fragment-index="0">Environmental Emergency</li>
+<li class="fragment strike" data-fragment-index="0">Ethical Enigmas</li>
+<li class="fragment strike" data-fragment-index="0">Enlightening Encyclical</li>
 </ul>
 
 <p class="reveal-punchline fragment" data-fragment-index="0">Did you read the title?</p>
