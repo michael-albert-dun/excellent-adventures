@@ -206,7 +206,7 @@ tracking — none of which the legacy system had.
 
 ## What I learned
 
-- A little bit about PHP security
+- A bit about PHP security (which I've forgotten)
 - Not a bit of CSS (thank heavens)
 - Keep the big picture in your head
 - Users have strange preferences
