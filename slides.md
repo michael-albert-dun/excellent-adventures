@@ -53,7 +53,7 @@ Note:
 
 ## A mullet talk
 
-Business up front, party in the back
+<p class="fragment"><em>Business up front, party in the back</em></p>
 
 - A database and webapp rebuild for the Australasian Journal of Combinatorics
 - Revisiting an old paper
