@@ -297,7 +297,7 @@ in case anyone wants to look it up afterward — no need to open it live.
 
 Note:
 Submissions have roughly tripled since the AI-writing surge discussed
-earlier — 79 last month against a 22-46 range for most of the last two
+earlier — 80 last month against a 22-46 range for most of the last two
 and a half years. Genuinely unclear yet whether this settles into a new
 normal or keeps climbing; the question mark in the title is doing real
 work.
@@ -402,7 +402,7 @@ Live in the browser again. Come back for Tintangle.
 ## The Rebuild
 
 - I became an editor-in-chief in early 2022
-- This has been on my **urgent** list since then
+- This has been on my <strong style="color: var(--accent); text-transform: uppercase;">urgent</strong> list since then
 - Several false starts
 - It hasn't been *easy* but it's been possible
 
@@ -436,9 +436,9 @@ Last point is because I view the current designs as a bit generic
 
 ## Mike's final words
 
-- Doing what you already do, just faster, is uninspired and potentially problematic
-- But sometimes necessary
-- If you can, search for dreams blocked only by mechanical obstacles
+- Doing what you already do, but better, is uninspiring and potentially problematic
+- Though sometimes necessary
+- Chase dreams blocked only by mechanical obstacles
 
 ---
 
