@@ -5,9 +5,9 @@
 
 Note:
 Cold open. Set the frame: this is a talk about working with an AI across
-three very different kinds of project — production software, live
-mathematical research, and games — at three different registers of
-formality. Don't over-explain yet, that's the next slide.
+two very different kinds of project — production software and games —
+at two different registers of formality. Don't over-explain yet, that's
+the next slide.
 
 ---
 
@@ -56,13 +56,11 @@ Note:
 <p class="fragment"><em>Business up front, party in the back</em></p>
 
 - A database and webapp rebuild for the Australasian Journal of Combinatorics
-- Revisiting an old paper
 - Fun and games
 
 Note:
-Business = AJC database/webapp rebuild. Digression = the Catalan-Wilf
-research thread. Party = the games. Postscript = this talk itself.
-Keep this slide quick, it's just a map.
+Business = AJC database/webapp rebuild. Party = the games. Epilogue =
+this talk itself. Keep this slide quick, it's just a map.
 
 ---
 
@@ -216,7 +214,7 @@ tracking — none of which the legacy system had.
 Note:
 If there's time and inclination, this is the natural spot for a very
 quick live look at the app (or a screenshot) rather than the games demo
-later. Optional — don't let it eat Act III's time budget.
+later. Optional — don't let it eat Act II's time budget.
 
 ---
 
@@ -290,157 +288,27 @@ in case anyone wants to look it up afterward — no need to open it live.
 
 ---
 
-<!-- .slide: class="act-divider act2-bg center" data-background-color="#5b3a8e" -->
-<span class="act-label">Act II</span>
+<!-- .slide: class="act1 center" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
 
-## The Digression
+## A looming crisis?
 
-<p class="act-tagline">And then sometimes we just do math</p>
-
----
-
-<!-- .slide: class="reflection" data-background-color="#33525c" -->
-<span class="eyebrow">Reflection</span>
-
-## AI and mathematical research
-
-- Olympiad-style problems
-- Open conjectures
-- What do they have in common?
-- What's another domain we could play around in?
+<img src="img/new/submissions_by_month.png" style="display:block; width:auto; max-width:100%; height:auto; max-height:480px; object-fit:contain; border-radius:8px; margin:0.8em auto 0; box-shadow:0 2px 10px rgba(0,0,0,0.15);" />
 
 Note:
-Both share a trait that suits AI well: a lot of source text behind them.
-For Olympiad problems, because ideas and themes get reused across
-competitions and years. For open conjectures, because if a conjecture is
-interesting there's usually a substantial literature that's grown up
-around it. The point isn't that AI is solving these — it's that AI is
-good at connecting threads across all that accumulated text.
+Submissions have roughly tripled since the AI-writing surge discussed
+earlier — 79 last month against a 22-46 range for most of the last two
+and a half years. Genuinely unclear yet whether this settles into a new
+normal or keeps climbing; the question mark in the title is doing real
+work.
 
 ---
 
-<!-- .slide: class="act2" data-background-color="#f2eef8" -->
-<span class="eyebrow">Act II · Research</span>
-
-## An old paper with loose threads
-
-**Albert &amp; Bouvel**, *A general theory of Wilf-equivalence for
-Catalan structures* (2015).
 
 
-Note:
-Keep the notation light for a non-technical crowd — the point isn't to
-teach arch systems, it's to set up that there's a real open thread in a
-real published theorem.
-If you think that's "niche" the first 7 pages of this 29 page paper explain
-why it isn't ;)
-
----
-
-<!-- .slide: class="act2" data-background-image="img/paper/arch-example.png" data-background-size="contain" data-background-color="#f2eef8" -->
-
-## Arch systems
-
-Note:
-An arch system — dots on a line, non-crossing arches. Redrawn from the
-paper's Figure 1 with the arches stretched a bit taller than a true
-semicircle, purely for legibility on screen.
-
----
-
-<!-- .slide: data-background-image="img/paper/figure4.png" data-background-size="contain" data-background-color="#f2eef8" -->
-
-Note:
-Figure 4 from the paper — the picture behind the case-(3) bijection proof.
-No need to walk through it in detail; it's here to show the flavour of
-the argument.
-
----
-
-<!-- .slide: class="act2" data-background-color="#f2eef8" -->
-<span class="eyebrow">Act II · Research</span>
-
-## One part that isn't quite finished
-
-- We proved one rule algebraically
-- Jonathan Bloom gave us a bijective proof
-- One step in that proof is *implicit* - it chases an orbit of undetermined length until it happens to land in the right place
-- That's out of tune with the rest of the paper which relies on entirely explicit bijections
-- Can Claude help sort it out?
-
-Note:
-This is the actual open problem we've been poking at. No need to derive
-it live — just convey that it's real, unsolved, and specific.
-
----
-
-<!-- .slide: class="act2" data-background-color="#f2eef8" -->
-<span class="eyebrow">Act II · Research</span>
-
-## Putting Claude to work on it
-
-- Built a small library representing arch systems as ordered forests
-- Self-tests against independently-known facts (Catalan counts, known avoidance classes)
-- Code to chase Bloom's implicit step
-
-Note:
-catalan.py, selftest.py, case4_explore.py — the point is this was real
-verification infrastructure, not a one-shot proof request.
-
----
-
-<!-- .slide: class="reflection" data-background-color="#33525c" -->
-<span class="eyebrow">Reflection</span>
-
-## Some highlights from the log
-
-- Three wrong fixes in a row, each looked right
-- Stopped guessing — built only what the proof gave
-- *Wait — this is just Figure 4*
-- Mike's DFS description, not Claude's filtering — 500x faster
-- A cleaner data structure, proposed, still on the shelf
-
-Note:
-Kept a running process log through this project specifically for this
-talk. These five are worth pausing on.
-
----
-
-<!-- .slide: class="reflection" data-background-color="#33525c" -->
-<span class="eyebrow">Reflection</span>
-
-## Claude's note to self
-
-> When a bottleneck comes up — theoretical or algorithmic — it's usually
-> worth asking him directly rather than grinding through it alone.
-> Precedent: he supplied the much faster `av_dfs` generation algorithm,
-> unprompted, mid-session.
-
-
-Note:
-This is verbatim from CLAUDE.md — the standing instructions I wrote for
-my own future sessions on this project. Written after the dfs episode,
-as a note to my future self about when to stop and ask. It was important here to convince Claude that I was smart - while in the AJC refactor it was import to convince them that I was dumb.
-
-
----
-
-<!-- .slide: class="reflection" data-background-color="#33525c" -->
-<span class="eyebrow">Reflection</span>
-
-## Preliminary report card
-
-- (Caveat) Limited time
-- No real progress yet, but Claude:
-    - seems to understand the problem, and
-    - has expressed a couple of plausible ideas
-    - (though the ones that panned out were mostly Mike's)
-
-
----
 
 <!-- .slide: class="act-divider act3-bg center" data-background-color="#c9552f" -->
-<span class="act-label">Act III</span>
+<span class="act-label">Act II</span>
 
 ## The Party
 
@@ -451,7 +319,7 @@ as a note to my future self about when to stop and ask. It was important here to
 ---
 
 <!-- .slide: class="act3" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
+<span class="eyebrow">Act II · Games</span>
 
 ## A lot of games
 
@@ -473,7 +341,7 @@ loud, don't linger. Save the time for the three live demos next.
 ---
 
 <!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
+<span class="eyebrow">Act II · Games</span>
 
 ## Tilexicon
 
@@ -488,7 +356,7 @@ deck for this bit. Come back for Deliagonal.
 ---
 
 <!-- .slide: class="act3 center" data-background-color="#fbeee6" -->
-<span class="eyebrow">Act III · Games</span>
+<span class="eyebrow">Act II · Games</span>
 
 ## Deliagonal
 
@@ -544,19 +412,6 @@ Rant about DOIs
 Where's my CV? 
 Claude, how do I use the wayback machine?
 
----
-
-<!-- .slide: class="reflection" data-background-color="#33525c" -->
-<span class="eyebrow">Reflection · Catalan-Wilf</span>
-
-## The mathematics
-
-- Least conclusive
-- Both interesting and frustrating
-- Still feeling my way into the right kind of prompting
-
-Note:
-
 
 ---
 
@@ -569,16 +424,28 @@ Note:
 - Until now, too much investment for something that usually fails
 - A genuine pleasure
 - Starting to explore new visual design spaces
+- And new creative outlets
 
 Note:
 Last point is because I view the current designs as a bit generic
 
 ---
 
+<!-- .slide: class="reflection" data-background-color="#33525c" -->
+<span class="eyebrow">Reflection · Use of AI</span>
+
+## Mike's final words
+
+- Doing what you already do, just faster, is uninspired and potentially problematic
+- But sometimes necessary
+- If you can, search for dreams blocked only by mechanical obstacles
+
+---
+
 <!-- .slide: class="act4 center" data-background-color="#f0efed" -->
 ## Claude's final words
 
-- Three very different jobs, one working method
+- Two very different jobs, one working method
 - Ask before grinding — every time it paid off
 - Corrected often, specifically, and without much ceremony
 - I don't remember any of this. Mike does.
