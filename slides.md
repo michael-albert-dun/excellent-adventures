@@ -304,11 +304,12 @@ work.
 
 ---
 
-<!-- .slide: class="center" -->
+<!-- .slide: class="act1 center" data-background-color="#eef4f8" -->
+<span class="eyebrow">Act I · Business</span>
 
 ## But Mike ...
 
-- What's the story about AI in pure mathematics
+- What's the story about AI in pure mathematics?
 - Not good
 
 ---
