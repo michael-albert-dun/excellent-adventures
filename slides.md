@@ -55,7 +55,7 @@ Note:
 
 <p class="fragment"><em>Business up front, party in the back</em></p>
 
-- A database and webapp rebuild for the Australasian Journal of Combinatorics
+- Database and webapp rebuild for the Australasian Journal of Combinatorics
 - Fun and games
 
 Note:
@@ -406,19 +406,21 @@ Live in the browser again. Come back for Tintangle.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection · AJC</span>
 
-## The Rebuild
+## The AJC Rebuild
 
 - I became an editor-in-chief in early 2022
 - This has been on my <strong style="color: var(--accent); text-transform: uppercase;">urgent</strong> list since then
-- Several false starts
 - It hasn't been *easy* but it's been possible
+- Unanticipated workflow improvements
+- Leading to new features
 
 
 Note:
 Rant about DOIs
 Where's my CV? 
 Claude, how do I use the wayback machine?
-
+Extract details from a new submission and paste in bulk
+Without ever needing to have coded carefully enough that I can answer the question "Where's the CSS for that button"
 
 ---
 
