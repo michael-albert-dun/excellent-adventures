@@ -304,8 +304,14 @@ work.
 
 ---
 
+<!-- .slide: class="center" -->
 
+## But Mike ...
 
+- What's the story about AI in pure mathematics
+- Not good
+
+---
 
 <!-- .slide: class="act-divider act3-bg center" data-background-color="#c9552f" -->
 <span class="act-label">Act II</span>
