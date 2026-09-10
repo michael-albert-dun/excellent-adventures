@@ -304,8 +304,8 @@ work.
 
 ---
 
-<!-- .slide: class="act1 center" data-background-color="#eef4f8" -->
-<span class="eyebrow">Act I · Business</span>
+<!-- .slide: class="interlude center" data-background-color="#3f6785" -->
+<span class="eyebrow">Interlude</span>
 
 ## But Mike ...
 
