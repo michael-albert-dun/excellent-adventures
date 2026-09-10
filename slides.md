@@ -458,7 +458,7 @@ Last point is because I view the current designs as a bit generic
 - Ask before grinding — every time it paid off
 - Corrected often, specifically, and without much ceremony
 - I don't remember any of this. Mike does.
-- No pptx harmed in the making of this talk
+- No pptx was harmed in the making of this talk
 
 Note:
 Draft — will keep revisiting this one over the coming weeks, same as
