@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Recording · Mike &amp; Claude's Excellent Adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --ink: #1c1f26;
+      --paper: #fbfaf7;
+      --act1: #1f4b6e;
+    }
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, 'Iowan Old Style', serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 1.2em 3em;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.4em;
+      margin: 0 0 0.9em;
+    }
+    video {
+      width: 100%;
+      max-width: 960px;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.18);
+      background: #000;
+    }
+    p.back {
+      margin-top: 1.6em;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-size: 0.9em;
+    }
+    p.back a {
+      color: var(--act1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Mike &amp; Claude's Excellent Adventures</h1>
+  <video controls preload="metadata">
+    <source src="Talk.mp4" type="video/mp4" />
+    Your browser doesn't support embedded video —
+    <a href="Talk.mp4">download the recording</a> instead.
+  </video>
+  <p class="back"><a href="index.html">&larr; Back</a> · <a href="slides.html">View the slides</a></p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mike and Claude's Excellent Adventures</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/white.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <!-- Editing/preview/presenting instructions: see README.md in this folder. -->
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="slides.md" data-separator="^\r?\n---\r?\n$" data-separator-notes="^Note:"></section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      controls: true,
+      progress: true,
+      center: false,
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      width: 1100,
+      height: 720,
+      margin: 0.08,
+      autoSlide: 0,          // never auto-advance
+      autoSlideStoppable: true,
+      keyboard: true,        // arrows / space / click / clicker: manual trigger only
+      loop: false,
+      plugins: [ RevealMarkdown, RevealNotes ]
+    });
+
+    // Two named bullet-reveal styles, chosen per list in slides.md:
+    //   slow-reveal (the default — no wrapper needed) : one bullet per
+    //     click, in document order.
+    //   all-reveal  : <div class="all-reveal">...</div> around the list :
+    //     every bullet appears together, no clicking through.
+    // See README.md for copy-paste examples. .fade-group lists are always
+    // skipped here since that pattern manages its own fragment (the
+    // punchline) separately.
+    Reveal.on('ready', () => {
+      document.querySelectorAll('.slides section li').forEach(li => {
+        if (li.closest('.fade-group, .all-reveal')) return;
+        li.classList.add('fragment');
+      });
+    });
+
+    // fade-group: when a fragment inside a .fade-group is revealed (e.g.
+    // the "Did you read the title?" punchline), dim the rest of that
+    // group's bullet list; undim on step-back. See custom.css.
+    Reveal.on('fragmentshown', event => {
+      const group = event.fragment.closest('.fade-group');
+      if (group) group.classList.add('revealed');
+    });
+    Reveal.on('fragmenthidden', event => {
+      const group = event.fragment.closest('.fade-group');
+      if (group) group.classList.remove('revealed');
+    });
+  </script>
+</body>
+</html>
