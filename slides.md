@@ -3,6 +3,8 @@
 
 <p class="meta">Otago University School of Computing · Michael Albert · September 2026</p>
 
+<p class="small back-link"><a href="index.html">&larr; back to start page</a></p>
+
 Note:
 Cold open. Set the frame: this is a talk about working with an AI across
 two very different kinds of project — production software and games —
@@ -470,3 +472,5 @@ everything else. Keep it short and let the last line land.
 ## Thanks
 
 <p class="small">Questions?</p>
+
+<p class="small back-link"><a href="index.html">&larr; back to start page</a></p>

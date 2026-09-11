@@ -9,6 +9,7 @@
       --ink: #1c1f26;
       --paper: #fbfaf7;
       --act1: #1f4b6e;
+      --act3: #c9552f;
       --accent: #d9a441;
     }
     html, body {
@@ -70,7 +71,7 @@
       display: block;
       font-weight: 700;
       font-size: 1.1em;
-      color: var(--act1);
+      color: var(--ink);
       margin-bottom: 0.3em;
     }
     a.card .sub {
@@ -80,6 +81,12 @@
     }
     a.card.recording .label {
       color: var(--accent);
+    }
+    a.card.ajc .label {
+      color: var(--act1);
+    }
+    a.card.puzzles .label {
+      color: var(--act3);
     }
   </style>
 </head>
@@ -95,6 +102,14 @@
       <a class="card recording" href="recording.html">
         <span class="label">Recording</span>
         <span class="sub">Watch the talk</span>
+      </a>
+      <a class="card ajc" href="https://ajc.maths.uq.edu.au/" target="_blank" rel="noopener">
+        <span class="label">AJC</span>
+        <span class="sub">The journal's public pages</span>
+      </a>
+      <a class="card puzzles" href="https://michael-albert-dun.github.io/" target="_blank" rel="noopener">
+        <span class="label">Puzzles</span>
+        <span class="sub">The games themselves</span>
       </a>
     </div>
   </main>

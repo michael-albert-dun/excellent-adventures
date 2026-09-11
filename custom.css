@@ -208,6 +208,18 @@
   color: #666;
 }
 
+/* Discreet back-to-start-page link on the title and closing slides —
+   muted grey instead of the theme's blue link colour, so it doesn't
+   compete for attention. */
+.reveal .back-link a,
+.reveal .back-link a:hover {
+  color: #999;
+  text-decoration: none;
+}
+.reveal .back-link a:hover {
+  color: #666;
+}
+
 /* fade-group: a block whose bullet list dims when its punchline fragment
    is revealed (wired up in index.html via Reveal's fragmentshown/hidden
    events, since plain CSS can't target a preceding sibling by a later
