@@ -35,12 +35,10 @@ as the reveal that this is not that talk.
 
 ## Story time
 
-- Personal experiences
-- Low-stakes and small-scale
-- Not about optimisation and efficiency
-- What was the experience?
-- What did I learn?
-- (and just a little) What might it mean?
+- Two projects
+- Claude as a collaborator, start to finish
+- What did I experience, and what did I learn?
+- What might it mean?
 
 ---
 
