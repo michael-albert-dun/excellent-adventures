@@ -146,12 +146,18 @@ doing more" lands without needing line counts or table counts.
 </div>
 
 Note:
-Tell the quick-hint story live: I was convinced a search box was only
-showing 5 results when it should show 8 — spent a genuinely embarrassing
-half hour convinced something was broken, before realising the results
-box just... scrolled. Good "even AI collaborations have very human
-miscommunications" beat. Skip the sysadmin details (file permissions,
-tar, scp) from the technical version — not needed for the story.
+"Different ideas about what finished meant" — Claude had been treating
+"finished" as covering the editor-facing actions and the publication
+pipeline; I meant that plus the public-facing webpage. A genuine
+last-minute scope mismatch, not just a joke.
+
+Then tell the quick-hint story live: I was convinced a search box was
+only showing 5 results when it should show 8 — spent a genuinely
+embarrassing half hour convinced something was broken, before realising
+the results box just... scrolled. Good "even AI collaborations have very
+human miscommunications" beat. Skip the sysadmin details (file
+permissions, tar, scp) from the technical version — not needed for the
+story.
 
 ---
 
