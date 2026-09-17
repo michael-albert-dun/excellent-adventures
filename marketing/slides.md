@@ -138,8 +138,8 @@ doing more" lands without needing line counts or table counts.
 
 <div class="all-reveal">
 
-- A last-minute scramble once the new system was ready to go live
-- Claude and I had quietly different ideas about what "finished" meant
+- A last-minute scramble once the new system was ready
+- Claude and I had different ideas about what "finished" meant
 - The bug that wasn't a bug
 - I became Claude's secretary for a day
 
@@ -360,7 +360,7 @@ party in the back" framing from the map slide.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection · Use of AI</span>
 
-## Mike's final words
+## Final words
 
 - Doing what you already do, but better, is uninspiring and potentially problematic
 - Though sometimes necessary
