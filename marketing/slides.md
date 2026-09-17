@@ -92,10 +92,10 @@ technical version; the point lands fine without it.
 
 ---
 
-<!-- .slide: data-background-image="../img/legacy/Front%20page.png" data-background-size="contain" data-background-color="#eef4f8" -->
+<!-- .slide: data-background-image="../img/legacy/Contact%20record.png" data-background-size="contain" data-background-color="#eef4f8" -->
 
 Note:
-Legacy front page. Let the room laugh at it — no narration needed.
+Legacy contact record. Let the room laugh at it — no narration needed.
 
 ---
 
