@@ -366,11 +366,11 @@ party in the back" framing from the map slide.
 <!-- .slide: class="reflection" data-background-color="#33525c" -->
 <span class="eyebrow">Reflection · Use of AI</span>
 
-## Final words
+## Final words on using AI
 
 - Doing what you already do, but better, is uninspiring and potentially problematic
 - Though sometimes necessary
-- Chase dreams blocked only by mechanical obstacles
+- Instead, think about building what's been blocked only by mechanics
 
 ---
 
