@@ -1,7 +1,7 @@
 <!-- .slide: class="title-slide center" -->
 # Mike &amp; Claude's Excellent Adventures
 
-<p class="meta">Marketing Department · Michael Albert · [date TBC]</p>
+<p class="meta">Marketing Department · Michael Albert · 25/9/2026</p>
 
 Note:
 Cold open. Same frame as the School of Computing version, but shorter and
