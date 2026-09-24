@@ -370,7 +370,7 @@ party in the back" framing from the map slide.
 
 - Doing what you already do, but better, is uninspiring and potentially problematic
 - Though sometimes necessary
-- Instead, think about building what's been blocked only by mechanics
+- Instead, think about building what's been blocked only by mechanical obstacles
 
 ---
 
